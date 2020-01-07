@@ -27,6 +27,10 @@ body {
   align-items: center;
   max-width: none;
 }
+.booom
+{
+  display: none;
+}
 
 main {
   margin: 0 auto;
@@ -88,11 +92,11 @@ img {
   text-decoration: none;
 }
 
-.brand-logo-name {
-  margin-left: 1rem;
-  font-size: 2.5rem;
+.esummitlogo
+{
+   height: auto;
+   width:300px;
 }
-
 .brand-logo img {
   width: 45px;
   height: 52px;
@@ -441,6 +445,9 @@ li span {
 
 .speaker-name {
   font-size: 1.4em;
+  justify-content: center;
+  display: inline-flexbox;
+  flex-wrap: wrap;
 }
 
 .speaker-info {
@@ -654,6 +661,10 @@ li span {
   section {
     padding: 10px 20px;
   }
+  .esummitlogo
+{
+   transform: translateX(-10px) translateY(-15px);
+}
 
   .about-us::before,
   .about-us::after,
@@ -748,15 +759,16 @@ li span {
     padding: 0 0.5em;
     flex-direction: column;
     justify-content: center;
-    width: 43vw;
-    height: 30vh;
+    width: 42vw;
+    height: 35vh;
+  
   }
 
   .event-info {
     order: 2;
     text-align: center;
     justify-content: center;
-    width: 120%;
+    width: 195%;
   }
 
   .event-title {
@@ -768,7 +780,7 @@ li span {
   }
   .event-image {
     filter: invert();
-    
+    vertical-align: top;
   }
   .bellwether {
     content: url(img/logos/bellwether.png);
@@ -862,8 +874,8 @@ li span {
     padding: 0 1em;
   }
   .asso-card {
-    height: 110px;
-    width: 110px;
+    height: 100px;
+    width: 100px;
   }
 
   .team-card-wrapper {
@@ -876,6 +888,10 @@ li span {
     flex-direction: column;
     justify-content: center;
   }
+  .booom
+{
+  display: initial;
+}
 }
 
 @media only screen and (max-width: 1040px) {
