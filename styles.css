@@ -354,6 +354,30 @@ li span {
 .event-image {
   max-width: 30vw;
 }
+.bellwether {
+  content: url(https://drive.google.com/file/d/1uhTRp8PgN3Teq6AtHwX0S4yfej6FDpj5/view?usp=sharing);
+}
+.informalevents {
+  content: url(img/logos/informalevents.png);
+}
+.instaseed {
+  content: url(img/logos/instaseed.png);
+}
+.mockstonks {
+  content: url(img/logos/mockstonks.png);
+}
+.paneldiscussion {
+  content: url(img/logos/paneldiscussion.png);
+}
+.speakersession {
+  content: url(img/logos/speakersession.png);
+}
+.startupcombat {
+  content: url(img/logos/startupcombat.png);
+}
+.unravel {
+  content: url(img/logos/unravel.png);
+}
 
 .register-button {
   color: black;
@@ -768,7 +792,7 @@ li span {
     order: 2;
     text-align: center;
     justify-content: center;
-    width: 195%;
+    width: 120%;
   }
 
   .event-title {
