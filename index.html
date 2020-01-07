@@ -101,7 +101,7 @@
     .nav {
       height: 80px;
       width: 100% !important;
-      background-color: #0e0e11;
+      background-color: #1f1f1f;
       padding-top: 20px;
 
     }
@@ -179,7 +179,7 @@
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 100px;
+        top: 80px;
         left: 0px;
       }
 
@@ -193,7 +193,7 @@
       }
 
       .nav>#nav-check:checked~.nav-links {
-        height: calc(50vh);
+        height: calc(200vh);
         overflow-y: auto;
       }
     }
@@ -282,7 +282,6 @@
 
 <style>
   
-
     @media (max-width: 768px) {
       #footer1{
         min-height: 590px;
@@ -297,18 +296,28 @@
 
 </head>
 
+
+    @media (max-width: 768px) {
+      #footer1{
+        min-height: 590px;
+      }
+    }
+
+</style>
+</head>
 <body>
 
   <!-- Nav Bar -->
   <header class="main-header">
     <div class="nav">
       <input type="checkbox" id="nav-check">
-      <div class="nav-header">
+      <!-- <div class="nav-header">
         <div class="nav-title">
             <img class="esummitlogo" src="./img/logos/esummit logo final.png" />
+
           </a>
         </div>
-      </div>
+      </div> -->
       <div class="nav-btn" style="padding-top: 40px;">
         <label for="nav-check">
           <span></span>
@@ -320,35 +329,39 @@
       <div class="nav-links">
         <a href="#event">EVENTS</a>
         <a href="#speaker">SPEAKERS</a>
+
+        <a href="#sponsors">ASSOCIATIONS</a>
+        <a href="#team">TEAM</a>
+
         <a href="#footer1" class="accent-link">CONTACT</a>
       </div>
     </div>
   </header>
-  <div style="background-color: #0e0e11;">
+  <!-- <div style="background-color: #0e0e11;">
     <br><br><br><br><br><br><br><br>
-  </div>
+  </div> -->
 
   <!-- Body -->
   <main>
-    <section class="intro-section">
-      <div class="intro-text-wrapper">
+    <section class="intro-section" style="background: #1f1f1f; padding:0;">
+      <!-- <div class="intro-text-wrapper">
         <h1 class="intro-text accent-text">ESUMMIT '20</h1>
         <h3 class="intro-sub-text">By eCell NSUT</h3>
         <p class="intro-para">7-8 FEBRUARY</p>
         <a href="#event" class="scroll-link">Explore Events </a>
-      </div>
-      <div class="intro-image-wrapper">
-        <!-- <img src="https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="intro-image"> -->
-      </div>
+      </div> -->
+      <!-- <div class="intro-image-wrapper">
+      </div> -->
+      <img src="http://www.ecellnsut.com/images/blog/comingsoon.png" style="width: 100%; max-height: 800px; height: auto">
     </section>
     <section class="about-us">
       <div class="about-us-wrapper">
-        <div class="image-wrapper">
+        <!-- <div class="image-wrapper"> -->
 
         </div>
         <div class="our-info-wrapper">
           <h1 class="accent-text">What is ESummit?</h1>
-          <p class="our-info">
+          <p class="our-info" style="font-size: 24px;">
             Entrepreneurship Summit is the brainchild of E-Cell, NSUT. Aiming
             at inculcation and development the very spirit of entreneurship,
             eCell NSUT comes up with its annual affair to stir an essence of
@@ -376,8 +389,8 @@
         <div class="event-card">
           <div class="event-info">
             <h2 class="event-title accent-text">Bellwether</h2>
-            <p class="event-tagline">The Perfect Manager </p>
-            <p class="booom"><br><br><br></p>
+
+            <p class="event-tagline">The perfect manager</p>
             <p class="event-desc">
               Bellwether: The Perfect Manager is an game designed to
               push you out of your comfort zone and challenge you to
@@ -451,9 +464,11 @@
               alt="event" class="event-image mockstonks" />
           </div>
           <div class="event-info">
+
             <h2 class="event-title accent-text">Invest-o-Preneur</h2>
             <p class="event-tagline">Bid it to Win it</p>
             <p class="booom"><br><br></p>
+
             <p class="event-desc">
               The key to making money in stocks is not to get
               intimidated by them. This competition provides that very
@@ -475,6 +490,8 @@
             <p class="event-tagline">An idea stands futile unless it is talked upon, discussion stands null if it's not worked upon. </p>
             <p class="booom"><br></p>
             <p class="event-desc">
+        
+
               And This February, eCell NSUT, brings a Platform to convocate for you all - Panel Discussion, through the series of the event called- E-Summit. 
               
               It's not Arnab, the times now guy, shouting all over, that you want to hear from, but it would definitely be our prestigious and talented pool of speakers who will give their insights to the audience and discuss the collaboration of their ideas and their industry's reality for all.
@@ -602,10 +619,12 @@
         <span class="stroke-text-black">Past</span> Speakers
       </h1>
       <div class="speakers-wrapper">
+
         <div class="speakercard">
           <h3 class="speaker-name">&nbsp&nbsp&nbspVipul<br>Aggarwal</h3>
           <p class="speaker-info line-1">Co-Founder</p>
           <p class="speaker-info line-2">Cricnwin</p>
+
         </div>
         <div class="speakercard">
           <h3 class="speaker-name">&nbsp&nbspRajesh <br>&nbsp&nbsp&nbsp&nbspAnd<br> Shubham</h3>
@@ -648,7 +667,7 @@
           <p class="speaker-info line-2">WoW Momos</p>
         </div>
     </section>
-    <section class="associations-section">
+    <section class="associations-section" id="sponsors">
       <h1 class="association-title">Associations</h1>
       <div class="asso-card-wrapper">
         <div class="asso-card"></div>

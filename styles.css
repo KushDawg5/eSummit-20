@@ -63,7 +63,7 @@ img {
   align-items: center;
   height: 120px;
   padding: 0 40px;
-  background-color: #0e0e11;
+  background-color: #1f1f1f;
 }
 
 .main-nav a {
@@ -97,6 +97,7 @@ img {
    height: auto;
    width:300px;
 }
+
 .brand-logo img {
   width: 45px;
   height: 52px;
@@ -125,17 +126,24 @@ img {
 .intro-section {
   font-family: Coves;
   display: flex;
-  background-color: #0e0e11;
+  /* background-color: #0e0e11; */
+
   max-height: 1080px;
   align-items: center;
   justify-content: space-between;
   font-size: 1.5em;
+
   position: relative;
   margin-bottom: 120px;
+
   padding-top: 0;
   padding-bottom: 3em;
+
+  background-size: cover;
+  width: 100%;
+  min-height: 10vh;
 }
-.intro-section::after {
+/* .intro-section::after {
   content: "";
   position: absolute;
   bottom: -120px;
@@ -144,12 +152,12 @@ img {
   height: 120px;
   background: #0e0e11;
   clip-path: polygon(100% 0, 0 0, 100% 100%);
-}
+} */
 
 .intro-image-wrapper {
   background: url(https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  width: 500px;
-  height: 700px;
+  width: 100%;
+  height: auto;
   /* flex-basis: 40%; */
 }
 
@@ -219,9 +227,12 @@ img {
   background-color: #f2f2f2;
   position: relative;
   margin-bottom: 120px;
+
+  text-align: center;
+
 }
 
-.about-us::before {
+/* .about-us::before {
   content: "";
   position: absolute;
   top: -120px;
@@ -230,7 +241,7 @@ img {
   height: 120px;
   background: #f2f2f2;
   clip-path: polygon(100% 100%, 0 0, 0 100%);
-}
+} */
 .about-us::after {
   content: "";
   position: absolute;
@@ -341,7 +352,7 @@ li span {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5em;
-  padding: 0 9em;
+  padding: 0 6em;
 }
 .event-image-wrapper,
 .event-info {
@@ -681,6 +692,12 @@ li span {
 
 /* media queries */
 
+@media only screen and (max-width: 1040px) {
+  .event-card {
+    padding: 0 2em;
+  }
+}
+
 @media only screen and (max-width: 641px) {
   section {
     padding: 10px 20px;
@@ -740,11 +757,60 @@ li span {
     top: -50px;
   }
 
+  .about-us::before,
+  .about-us::after,
+  .events-section::before,
+  .events-section::after,
+  .speakers-section::before,
+  .speakers-section::after,
+  .associations-section::before,
+  .associations-section::after,
+  .team-section::before,
+  .intro-section::after {
+    height: 70px;
+  }
+  .about-us::before,
+  .events-section::before,
+  .speakers-section::before,
+  .associations-section::before,
+  .team-section::before {
+    top: -70px;
+  }
+
+  .about-us::after,
+  .events-section::after,
+  .speakers-section::after,
+  .associations-section::after,
+  .intro-section::after {
+    bottom: -70px;
+  }
+
+  .about-us,
+  .events-section,
+  .speakers-section,
+  .associations-section {
+    margin-bottom: 70px;
+  }
+
+  .team-section {
+    margin-bottom: 50px;
+  }
+  .team-section::after {
+    bottom: -50px;
+    height: 50px;
+  }
+
+  .footer-section::before,
+  .footer-section::after {
+    height: 50px;
+    top: -50px;
+  }
+
   /* Intro section styles */
 
-  .intro-section {
+  /* .intro-section {
     flex-direction: column;
-  }
+  } */
 
   .intro-text-wrapper {
     margin-bottom: 1em;
@@ -752,40 +818,42 @@ li span {
 
   .intro-text {
     font-size: 2em;
-    -ms-flex-order: 2;
   }
 
-  .intro-image-wrapper {
+  /* .intro-image-wrapper {
     -ms-flex-order: 1;
     height: 250px;
     width: 400px;
-  }
+  } */
 
   /* About us styles */
-  .about-us-wrapper {
+  /* .about-us-wrapper {
     flex-direction: column;
     flex: 1;
-  }
+  } */
 
-  .image-wrapper {
+  /* .image-wrapper {
     order: 2;
     margin: 0 auto;
     min-width: 300px;
     min-height: 250px;
-  }
+
+  } */
+
   .our-info-wrapper {
-    order: 1;
+    padding: 0 2em;
   }
 
   /* Event styles */
 
   .event-card {
-    padding: 0 0.5em;
+    padding: 0 0.8em;
     flex-direction: column;
     justify-content: center;
-    width: 42vw;
-    height: 35vh;
-  
+
+    width: 43vw;
+    height: 30vh;
+
   }
 
   .event-info {
@@ -831,37 +899,7 @@ li span {
     content: url(img/logos/unravel.png);
   }
 
-/* Speaker section styles  */
 
-::selection {
-  background: grey;
-  color: whitesmoke;
-}
-
-.speakers-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 120vw;
-}
-.speakercard {
-  width: 40vw;
-  height: 35vh;
-  display: inline-flexbox;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #444141d3;
-  background-size: cover;
-  background-image: url(https://www.icmif.org/sites/default/files/styles/inline_left/public/Ross%20Dawson%20news.jpg?itok=b_xYKzNZ);
-  color: #e68625;
-  background-blend-mode: multiply;
-  margin: 12px;
-  background-size: cover;
-  transition: 0.2s transform ease-in-out;
-  
-}
 
   ::selection {
     background: grey;
@@ -898,8 +936,10 @@ li span {
     padding: 0 1em;
   }
   .asso-card {
-    height: 100px;
-    width: 100px;
+
+    height: 110px;
+    width: 110px;
+
   }
 
   .team-card-wrapper {
@@ -912,14 +952,5 @@ li span {
     flex-direction: column;
     justify-content: center;
   }
-  .booom
-{
-  display: initial;
-}
-}
 
-@media only screen and (max-width: 1040px) {
-  .event-card {
-    padding: 0 2em;
-  }
 }
