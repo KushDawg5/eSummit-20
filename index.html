@@ -179,7 +179,7 @@
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 100px;
+        top: 80px;
         left: 0px;
       }
 
@@ -193,7 +193,7 @@
       }
 
       .nav>#nav-check:checked~.nav-links {
-        height: calc(50vh);
+        height: calc(200vh);
         overflow-y: auto;
       }
     }
@@ -297,14 +297,14 @@
   <header class="main-header">
     <div class="nav">
       <input type="checkbox" id="nav-check">
-      <div class="nav-header">
+      <!-- <div class="nav-header">
         <div class="nav-title">
           <a class="brand-logo">
             <img src="http://127.0.0.1:5502/img/logos/esummit%20logo%20final.png" />
             
           </a>
         </div>
-      </div>
+      </div> -->
       <div class="nav-btn" style="padding-top: 40px;">
         <label for="nav-check">
           <span></span>
@@ -316,6 +316,8 @@
       <div class="nav-links">
         <a href="#event">EVENTS</a>
         <a href="#speaker">SPEAKERS</a>
+        <a href="#sponsors">ASSOCIATIONS</a>
+        <a href="#team">TEAM</a>
         <a href="#footer1" class="accent-link">CONTACT</a>
       </div>
     </div>
@@ -344,7 +346,7 @@
         </div>
         <div class="our-info-wrapper">
           <h1 class="accent-text">What is ESummit?</h1>
-          <p class="our-info">
+          <p class="our-info" style="font-size: 24px;">
             Entrepreneurship Summit is the brainchild of E-Cell, NSUT. Aiming
             at inculcation and development the very spirit of entreneurship,
             eCell NSUT comes up with its annual affair to stir an essence of
@@ -601,7 +603,7 @@
           <p class="speaker-info line-2">Paypal</p>
         </div>
     </section>
-    <section class="associations-section">
+    <section class="associations-section" id="sponsors">
       <h1 class="association-title">Associations</h1>
       <div class="asso-card-wrapper">
         <div class="asso-card"></div>
